@@ -30,34 +30,23 @@
           <boolProp name="autocommit">true</boolProp>
           <stringProp name="checkQuery">Select 1</stringProp>
           <stringProp name="connectionAge">5000</stringProp>
-          <stringProp name="dataSource"></stringProp>
-          <stringProp name="dbUrl"></stringProp>
-          <stringProp name="driver"></stringProp>
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="dbUrl">jdbc:mysql://127.0.0.1:3306/data</stringProp>
+          <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
           <boolProp name="keepAlive">true</boolProp>
-          <stringProp name="password"></stringProp>
-          <stringProp name="poolMax">0</stringProp>
+          <stringProp name="password">qwerty</stringProp>
+          <stringProp name="poolMax">10</stringProp>
           <stringProp name="timeout">10000</stringProp>
           <stringProp name="transactionIsolation">DEFAULT</stringProp>
           <stringProp name="trimInterval">60000</stringProp>
-          <stringProp name="username"></stringProp>
+          <stringProp name="username">Ann1104</stringProp>
         </JDBCDataSource>
         <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Update asset table" enabled="true">
-          <stringProp name="dataSource"></stringProp>
-          <stringProp name="query"></stringProp>
-          <stringProp name="queryArguments"></stringProp>
-          <stringProp name="queryArgumentsTypes"></stringProp>
-          <stringProp name="queryTimeout"></stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select" enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="resultSetHandler">Store as String</stringProp>
-          <stringProp name="resultVariable"></stringProp>
-          <stringProp name="variableNames"></stringProp>
-        </JDBCSampler>
-        <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Insert asset table" enabled="true">
-          <stringProp name="dataSource"></stringProp>
-          <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query"></stringProp>
+          <stringProp name="query">select name, surname, telephoneNumber 
+from personalData;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -66,10 +55,65 @@
           <stringProp name="resultSetHandler">Store as String</stringProp>
         </JDBCSampler>
         <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Insert asset history" enabled="true">
-          <stringProp name="dataSource"></stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select All" enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query"></stringProp>
+          <stringProp name="query">select *
+from personalData;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Insert " enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="queryType">Update Statement</stringProp>
+          <stringProp name="query">insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values(&apos;Jadwiga&apos;, &apos;Grabowska&apos;, &apos;1966-06-06&apos;, &apos;66060637703&apos;, &apos;699614304&apos; );</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Update " enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="query">UPDATE personalData
+SET name=&apos;Aleksandra&apos;, telephoneNumber=&apos;571223751&apos;
+WHERE name = &apos;Joanna&apos; and dateBirth=&apos;1952-12-12&apos;; </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Update Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Delete" enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="queryType">Update Statement</stringProp>
+          <stringProp name="query">delete 
+from personalData 
+where id=&apos;2&apos;; </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select All 2" enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query">select *
+from personalData;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
