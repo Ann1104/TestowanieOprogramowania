@@ -1,0 +1,23 @@
+create table personalData(
+id int not null auto_increment,
+name varchar(50) not null,
+surname varchar(50) not null,
+dateBirth date not null,
+pesel char(11) not null,
+telephoneNumber char(9),
+primary key(id)
+);
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Anna', 'Nowak', '1996-04-11', '96041148706', '724787083' )
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Karol', 'Wiśniewski', '1995-01-19', '95011993412', '666427306' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Joanna', 'Wozniak', '1952-12-12', '52121211209', '881639250' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Jan', 'Szymański', '1920-03-25', '20032592119', '789864943' );
+
+select* from personalData;
