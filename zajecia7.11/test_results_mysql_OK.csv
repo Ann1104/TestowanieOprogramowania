@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="238" it="0" lt="238" ct="236" ts="1510583296687" s="true" lb="JDBC Request Select" rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="188" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">name	surname	telephoneNumber
+Anna	Nowak	724787083
+Aleksandra	Wozniak	571223751
+Jan	Szymański	789864943
+Jadwiga	Grabowska	699614304
+Jadwiga	Grabowska	699614304
+Jadwiga	Grabowska	699614304
+</responseData>
+</sample>
+<sample t="2" it="0" lt="1" ct="0" ts="1510583296933" s="true" lb="JDBC Request Select All" rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="357" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">id	name	surname	dateBirth	pesel	telephoneNumber
+1	Anna	Nowak	1996-04-11	96041148706	724787083
+3	Aleksandra	Wozniak	1952-12-12	52121211209	571223751
+4	Jan	Szymański	1920-03-25	20032592119	789864943
+5	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+6	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+7	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+</responseData>
+</sample>
+<sample t="50" it="0" lt="50" ct="0" ts="1510583296936" s="true" lb="JDBC Request Insert " rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="9" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">1 updates</responseData>
+</sample>
+<sample t="1" it="0" lt="1" ct="0" ts="1510583296989" s="true" lb="JDBC Request Update " rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="9" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">0 updates</responseData>
+</sample>
+<sample t="2" it="0" lt="1" ct="0" ts="1510583296992" s="true" lb="JDBC Request Delete" rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="9" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">0 updates</responseData>
+</sample>
+<sample t="5" it="0" lt="2" ct="1" ts="1510583296995" s="true" lb="JDBC Request Select All 2" rc="200" rm="OK" tn="Grupa wątków 1-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">id	name	surname	dateBirth	pesel	telephoneNumber
+1	Anna	Nowak	1996-04-11	96041148706	724787083
+3	Aleksandra	Wozniak	1952-12-12	52121211209	571223751
+4	Jan	Szymański	1920-03-25	20032592119	789864943
+5	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+6	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+7	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+8	Jadwiga	Grabowska	1966-06-06	66060637703	699614304
+</responseData>
+</sample>
+
+</testResults>

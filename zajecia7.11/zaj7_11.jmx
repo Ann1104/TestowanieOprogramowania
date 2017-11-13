@@ -211,9 +211,9 @@ from personalData;</stringProp>
               <encoding>false</encoding>
               <assertions>true</assertions>
               <subresults>true</subresults>
-              <responseData>false</responseData>
+              <responseData>true</responseData>
               <samplerData>false</samplerData>
-              <xml>false</xml>
+              <xml>true</xml>
               <fieldNames>true</fieldNames>
               <responseHeaders>false</responseHeaders>
               <requestHeaders>false</requestHeaders>
@@ -227,7 +227,7 @@ from personalData;</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zajecia7.11\test_results_mysql_ERROR_SelectAll.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
