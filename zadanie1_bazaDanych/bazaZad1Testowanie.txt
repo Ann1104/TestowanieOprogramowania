@@ -1,0 +1,46 @@
+﻿create table personalData(
+id int not null auto_increment,
+name varchar(50) not null,
+surname varchar(50) not null,
+dateBirth date not null,
+pesel char(11) not null,
+telephoneNumber char(9),
+primary key(id)
+);
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Anna', 'Nowak', '1996-04-11', '96041148706', '724787083' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Karol', 'Wiśniewski', '1995-01-19', '95011993412', '666427306' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Joanna', 'Wozniak', '1952-12-12', '52121211209', '881639250' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Jan', 'Szymański', '1920-03-25', '20032592119', '789864943' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Teresa', 'Cabak', '1987-09-17', '87091769005', '572353241' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Zofia', 'Raban', '1939-10-30', '39103049704', '699203354' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Danuta', 'Dobert', '2013-01-05', '13210551107', '508812864' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Halina', 'Lubaczewska', '1999-12-24', '99122447806', '729440737' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Bożena', 'Wobak', '1977-07-29', '77072990205', '603446995' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Stanisław', 'Jager', '1955-05-06', '55050608913', '782594905' );
+
+insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
+values('Krzysztof', 'Obaczyński', '1988-08-03', '88080354013', '536793618' );
+
+
+
+select* from personalData;
