@@ -1,1 +1,9 @@
-passed
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1510869139718,4203,1 _NoAction,200,OK,Grupa wątków 1-1,text,true,,31210,449,1,1,3806,0,3592
+1510869143951,1165,_pictureFromPage,200,OK,Grupa wątków 1-1,bin,true,,5517,484,1,1,1165,0,583
+1510869146784,891,2_LogIn,200,OK,Grupa wątków 1-1,text,true,,12552,1417,1,1,557,0,310
+1510869151056,6561,_daneOsobowe(first page),200,OK,Grupa wątków 1-1,text,true,,17074,762,1,1,6455,0,3970
+1510869157631,6192,_nowosci(second page),200,OK,Grupa wątków 1-1,text,true,,44118,771,1,1,5599,0,1098
+1510869163839,666,_dostawai(third page),200,OK,Grupa wątków 1-1,text,true,,12674,775,1,1,664,0,334
+1510869167168,1645,3_LogOut,200,OK,Grupa wątków 1-1,text,true,,14441,3018,1,1,1082,0,350
+1510869170190,2942,4_checkRandomValue,200,OK,Grupa wątków 1-1,text,true,,22843,779,1,1,2871,0,447
