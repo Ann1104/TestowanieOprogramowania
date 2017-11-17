@@ -42,16 +42,40 @@
           <stringProp name="username">Ann1104</stringProp>
         </JDBCDataSource>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Konfiguracja plików CSV" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Select" enabled="true">
           <stringProp name="delimiter">,</stringProp>
-          <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\select.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">true</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
-          <stringProp name="variableNames">name,surname,dateBirth,pesel,telephoneNumber</stringProp>
+          <stringProp name="variableNames">Sname,Spesel</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Insert" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\insert.csv</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">Iname,Isurname,IdateBirth,Ipesel,ItelephoneNumber</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Update" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\update.csv</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">Uname,UdateBirth</stringProp>
         </CSVDataSet>
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select" enabled="true">
@@ -59,7 +83,7 @@
           <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="query">select *
 from personalData
-where name=${name} and pesel=${pesel};</stringProp>
+where name=${Sname} and pesel=${Spesel};</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -72,7 +96,7 @@ where name=${name} and pesel=${pesel};</stringProp>
           <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="query">insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
-values(${name}, ${surname}, ${dateBirth}, ${pesel}, ${telephoneNumber});</stringProp>
+values(${Iname}, ${Isurname}, ${IdateBirth}, ${Ipesel}, ${ItelephoneNumber});</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -85,7 +109,7 @@ values(${name}, ${surname}, ${dateBirth}, ${pesel}, ${telephoneNumber});</string
           <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="query">UPDATE personalData
 SET name=&apos;Aleksandra&apos;, telephoneNumber=&apos;571223751&apos;
-WHERE name = ${name} and dateBirth=${dateBirth}; </stringProp>
+WHERE name = ${Uname} and dateBirth=${UdateBirth}; </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -180,7 +204,7 @@ from personalData;</stringProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_UP_AND_RUNNING" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -213,7 +237,44 @@ from personalData;</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\Anna\Desktop\zajecia7.11\test_results_mysql_ERROR_SelectAll.csv</stringProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\DB_UP_AND_RUNNING.csv</stringProp>
+          <boolProp name="ResultCollector.success_only_logging">true</boolProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_FAILED" enabled="true">
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\DB_FAILED.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
