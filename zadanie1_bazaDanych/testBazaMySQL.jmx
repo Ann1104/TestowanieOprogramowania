@@ -78,12 +78,79 @@
           <stringProp name="variableNames">Uname,UdateBirth</stringProp>
         </CSVDataSet>
         <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select All" enabled="true">
+          <stringProp name="dataSource">testBazaMySQL</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query">select *
+from personalData;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">v1</stringProp>
+            <stringProp name="RegexExtractor.regex">Anna</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">ERROR</stringProp>
+            <stringProp name="RegexExtractor.match_number">0</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">if(&quot;${v1}&quot; == &quot;ERROR&quot;){
+	FailureMessage = &quot; DB_FAILED &quot;;
+}
+else{
+	FailureMessage = &quot; DB_UP_AND_RUNNING &quot;;
+}
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_FAILED" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>false</time>
+                <latency>false</latency>
+                <timestamp>false</timestamp>
+                <success>false</success>
+                <label>false</label>
+                <code>false</code>
+                <message>false</message>
+                <threadName>true</threadName>
+                <dataType>false</dataType>
+                <encoding>false</encoding>
+                <assertions>false</assertions>
+                <subresults>false</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+              </value>
+            </objProp>
+            <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\DB_ACTION.csv</stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select" enabled="true">
           <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="query">select *
 from personalData
-where name=${Sname} and pesel=${Spesel};</stringProp>
+where name=&apos;${Sname}&apos;and pesel=&apos;${Spesel}&apos;;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -96,7 +163,7 @@ where name=${Sname} and pesel=${Spesel};</stringProp>
           <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="query">insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
-values(${Iname}, ${Isurname}, ${IdateBirth}, ${Ipesel}, ${ItelephoneNumber});</stringProp>
+values(&apos;${Iname}&apos;, &apos;${Isurname}&apos;, &apos;${IdateBirth}&apos;, &apos;${Ipesel}&apos;, &apos;${ItelephoneNumber}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -109,7 +176,7 @@ values(${Iname}, ${Isurname}, ${IdateBirth}, ${Ipesel}, ${ItelephoneNumber});</s
           <stringProp name="dataSource">testBazaMySQL</stringProp>
           <stringProp name="query">UPDATE personalData
 SET name=&apos;Aleksandra&apos;, telephoneNumber=&apos;571223751&apos;
-WHERE name = ${Uname} and dateBirth=${UdateBirth}; </stringProp>
+WHERE name = &apos;${Uname}&apos; and dateBirth=&apos;${UdateBirth}&apos;; </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -202,79 +269,6 @@ from personalData;</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_UP_AND_RUNNING" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>true</responseData>
-              <samplerData>false</samplerData>
-              <xml>true</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\DB_UP_AND_RUNNING.csv</stringProp>
-          <boolProp name="ResultCollector.success_only_logging">true</boolProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_FAILED" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\DB_FAILED.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
