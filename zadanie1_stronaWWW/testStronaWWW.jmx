@@ -335,6 +335,50 @@ else{
               <stringProp name="RegexExtractor.match_number">0</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+              <stringProp name="BeanShellAssertion.query">if(&quot;${v2}&quot; == &quot;ERROR&quot;){
+	FailureMessage = &quot; SMOKE_TEST_FAILED &quot;;
+}
+else{
+	FailureMessage = &quot; SMOKE_TEST_PASSED&quot;;
+}
+</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+            <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Smoke_Test_F/P" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>false</time>
+                  <latency>false</latency>
+                  <timestamp>false</timestamp>
+                  <success>false</success>
+                  <label>true</label>
+                  <code>false</code>
+                  <message>false</message>
+                  <threadName>false</threadName>
+                  <dataType>false</dataType>
+                  <encoding>false</encoding>
+                  <assertions>false</assertions>
+                  <subresults>false</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>false</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                </value>
+              </objProp>
+              <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_stronaWWW\SMOKE_TEST_RESULTS.csv</stringProp>
+            </ResultCollector>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">${v2} != &quot;ERROR&quot;</stringProp>
@@ -401,6 +445,50 @@ else{
                 <stringProp name="RegexExtractor.default">ERROR</stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+                <stringProp name="BeanShellAssertion.query">if(&quot;${v3}&quot; == &quot;ERROR&quot;){
+	FailureMessage = &quot; SMOKE_TEST_FAILED &quot;;
+}
+else{
+	FailureMessage = &quot; SMOKE_TEST_PASSED&quot;;
+}
+</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Smoke_Test_F/P" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>false</time>
+                    <latency>false</latency>
+                    <timestamp>false</timestamp>
+                    <success>false</success>
+                    <label>true</label>
+                    <code>false</code>
+                    <message>false</message>
+                    <threadName>false</threadName>
+                    <dataType>false</dataType>
+                    <encoding>false</encoding>
+                    <assertions>false</assertions>
+                    <subresults>false</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>false</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                  </value>
+                </objProp>
+                <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_stronaWWW\SMOKE_TEST_RESULTS.csv</stringProp>
+              </ResultCollector>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -469,6 +557,50 @@ else{
                 <stringProp name="RegexExtractor.default">ERROR</stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+                <stringProp name="BeanShellAssertion.query">if(&quot;${v4}&quot; == &quot;ERROR&quot;){
+	FailureMessage = &quot; SMOKE_TEST_FAILED &quot;;
+}
+else{
+	FailureMessage = &quot; SMOKE_TEST_PASSED&quot;;
+}
+</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Smoke_Test_F/P" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>false</time>
+                    <latency>false</latency>
+                    <timestamp>false</timestamp>
+                    <success>false</success>
+                    <label>true</label>
+                    <code>false</code>
+                    <message>false</message>
+                    <threadName>false</threadName>
+                    <dataType>false</dataType>
+                    <encoding>false</encoding>
+                    <assertions>false</assertions>
+                    <subresults>false</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>false</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                  </value>
+                </objProp>
+                <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_stronaWWW\SMOKE_TEST_RESULTS.csv</stringProp>
+              </ResultCollector>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -647,9 +779,9 @@ else{
             <hashTree/>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">v6</stringProp>
+              <stringProp name="RegexExtractor.refname">v5</stringProp>
               <stringProp name="RegexExtractor.regex">${randomValue}</stringProp>
-              <stringProp name="RegexExtractor.template">$6$</stringProp>
+              <stringProp name="RegexExtractor.template">$5$</stringProp>
               <stringProp name="RegexExtractor.default">ERROR</stringProp>
               <stringProp name="RegexExtractor.match_number">0</stringProp>
             </RegexExtractor>
