@@ -1,0 +1,5 @@
+label,failureMessage
+JDBC Request Select,
+JDBC Request Insert ,
+JDBC Request Update ,
+JDBC Request Select All,
