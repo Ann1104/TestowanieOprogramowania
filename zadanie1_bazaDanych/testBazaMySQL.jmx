@@ -19,59 +19,59 @@
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1511168400000</longProp>
-        <longProp name="ThreadGroup.end_time">1512033000000</longProp>
+        <longProp name="ThreadGroup.start_time">1511909280000</longProp>
+        <longProp name="ThreadGroup.end_time">1511910480000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration">120</stringProp>
-        <stringProp name="ThreadGroup.delay">600</stringProp>
+        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.delay">120</stringProp>
       </ThreadGroup>
       <hashTree>
         <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
           <boolProp name="autocommit">true</boolProp>
-          <stringProp name="checkQuery">Select 1</stringProp>
+          <stringProp name="checkQuery">select 1</stringProp>
           <stringProp name="connectionAge">5000</stringProp>
-          <stringProp name="dataSource">testBazaMySQL</stringProp>
-          <stringProp name="dbUrl">jdbc:mysql://127.0.0.1:3306/data</stringProp>
+          <stringProp name="dataSource">test</stringProp>
+          <stringProp name="dbUrl">jdbc:mysql://127.0.0.1:3306/daneosobowe</stringProp>
           <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
           <boolProp name="keepAlive">true</boolProp>
-          <stringProp name="password">qwerty</stringProp>
+          <stringProp name="password">anna123321</stringProp>
           <stringProp name="poolMax">10</stringProp>
           <stringProp name="timeout">10000</stringProp>
           <stringProp name="transactionIsolation">DEFAULT</stringProp>
           <stringProp name="trimInterval">60000</stringProp>
-          <stringProp name="username">Ann1104</stringProp>
+          <stringProp name="username">Anna123321</stringProp>
         </JDBCDataSource>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Select" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV select" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\select.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
-          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
           <stringProp name="variableNames">Sname,Spesel</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Insert" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV insert" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\insert.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
-          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
           <stringProp name="variableNames">Iname,Isurname,IdateBirth,Ipesel,ItelephoneNumber</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV - Update" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV update" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\update.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
-          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
@@ -88,18 +88,17 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select" enabled="true">
-          <stringProp name="dataSource">testBazaMySQL</stringProp>
-          <stringProp name="queryType">Select Statement</stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request - selectAll" enabled="true">
+          <stringProp name="dataSource">test</stringProp>
           <stringProp name="query">select *
-from personalData
-where name=&apos;${Sname}&apos;and pesel=&apos;${Spesel}&apos;;</stringProp>
+from personalData;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
-          <stringProp name="variableNames"></stringProp>
-          <stringProp name="resultVariable"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable">Request_1</stringProp>
+          <stringProp name="variableNames"></stringProp>
         </JDBCSampler>
         <hashTree>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
@@ -113,18 +112,22 @@ if(vars.getObject(&quot;Request_1&quot;).size() != 0) {
 		Failure = true;	
 		prev.setStopThread(true); 
 	}	
-} else {
+}
+ 
+
+else {
 	
 	FailureMessage = &quot; DB_FAILED &quot;;
 	Failure = true;	
-	prev.setStopThread(true); 
+	prev.setStopThread(true);
+
 }</stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
           </BeanShellAssertion>
           <hashTree/>
-          <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Alert" enabled="true">
+          <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="DB_ACTION" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -144,7 +147,7 @@ if(vars.getObject(&quot;Request_1&quot;).size() != 0) {
                 <responseData>false</responseData>
                 <samplerData>false</samplerData>
                 <xml>false</xml>
-                <fieldNames>true</fieldNames>
+                <fieldNames>false</fieldNames>
                 <responseHeaders>false</responseHeaders>
                 <requestHeaders>false</requestHeaders>
                 <responseDataOnError>false</responseDataOnError>
@@ -156,26 +159,30 @@ if(vars.getObject(&quot;Request_1&quot;).size() != 0) {
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Insert " enabled="true">
-          <stringProp name="dataSource">testBazaMySQL</stringProp>
-          <stringProp name="queryType">Update Statement</stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request - insert" enabled="true">
+          <stringProp name="dataSource">test</stringProp>
           <stringProp name="query">insert into personalData(name,surname,dateBirth,pesel,telephoneNumber)
-values(&apos;${Iname}&apos;, &apos;${Isurname}&apos;, &apos;${IdateBirth}&apos;, &apos;${Ipesel}&apos;, &apos;${ItelephoneNumber}&apos;);
-</stringProp>
+values(&apos;${Iname}&apos;, &apos;${Isurname}&apos;, &apos;${IdateBirth}&apos;, &apos;${Ipesel}&apos;, &apos;${ItelephoneNumber}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
-          <stringProp name="variableNames"></stringProp>
-          <stringProp name="resultVariable"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
         </JDBCSampler>
         <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">${X}</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">if( 35 &lt; ${X}){
-	FailureMessage = &quot; 1 &quot;;
+            <stringProp name="BeanShellAssertion.query">if(AssertionError == &quot;true&quot;){
+	AssertionFailureMessage = &quot; 0 &quot;;
 }
 else{
-	FailureMessage = &quot; 0 &quot;;
+	FailureMessage = &quot; 1 &quot;;
 }
 </stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
@@ -203,7 +210,7 @@ else{
                 <responseData>false</responseData>
                 <samplerData>false</samplerData>
                 <xml>false</xml>
-                <fieldNames>true</fieldNames>
+                <fieldNames>false</fieldNames>
                 <responseHeaders>false</responseHeaders>
                 <requestHeaders>false</requestHeaders>
                 <responseDataOnError>false</responseDataOnError>
@@ -215,8 +222,8 @@ else{
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Update " enabled="true">
-          <stringProp name="dataSource">testBazaMySQL</stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request - update" enabled="true">
+          <stringProp name="dataSource">test</stringProp>
           <stringProp name="query">UPDATE personalData
 SET name=&apos;Aleksandra&apos;, telephoneNumber=&apos;571223751&apos;
 WHERE name = &apos;${Uname}&apos; and dateBirth=&apos;${UdateBirth}&apos;; </stringProp>
@@ -229,12 +236,17 @@ WHERE name = &apos;${Uname}&apos; and dateBirth=&apos;${UdateBirth}&apos;; </str
           <stringProp name="variableNames"></stringProp>
         </JDBCSampler>
         <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">${X}</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">if( 35 &lt; ${X}){
-	FailureMessage = &quot; 1 &quot;;
+            <stringProp name="BeanShellAssertion.query">if( AssertionError == &quot;true&quot;){
+	FailureMessage = &quot; 0 &quot;;
 }
 else{
-	FailureMessage = &quot; 0 &quot;;
+	FailureMessage = &quot; 1 &quot;;
 }
 </stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
@@ -262,7 +274,7 @@ else{
                 <responseData>false</responseData>
                 <samplerData>false</samplerData>
                 <xml>false</xml>
-                <fieldNames>true</fieldNames>
+                <fieldNames>false</fieldNames>
                 <responseHeaders>false</responseHeaders>
                 <requestHeaders>false</requestHeaders>
                 <responseDataOnError>false</responseDataOnError>
@@ -274,25 +286,31 @@ else{
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Select All" enabled="true">
-          <stringProp name="dataSource">testBazaMySQL</stringProp>
-          <stringProp name="queryType">Select Statement</stringProp>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request -select" enabled="true">
+          <stringProp name="dataSource">test</stringProp>
           <stringProp name="query">select *
-from personalData;</stringProp>
+from personalData
+where pesel=&apos;${Spesel}&apos;;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
-          <stringProp name="variableNames"></stringProp>
-          <stringProp name="resultVariable"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
         </JDBCSampler>
         <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">${X}</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">if( 35 &lt; ${X}){
-	FailureMessage = &quot; 1 &quot;;
+            <stringProp name="BeanShellAssertion.query">if( AssertionError == &quot;true&quot;){
+	FailureMessage = &quot; 0 &quot;;
 }
 else{
-	FailureMessage = &quot; 0 &quot;;
+	FailureMessage = &quot; 1 &quot;;
 }
 </stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
@@ -320,7 +338,70 @@ else{
                 <responseData>false</responseData>
                 <samplerData>false</samplerData>
                 <xml>false</xml>
-                <fieldNames>true</fieldNames>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+              </value>
+            </objProp>
+            <stringProp name="filename">C:\Users\Anna\Desktop\zadanie1_bazaDanych\db_performance_Alert.txt</stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request - selectAll" enabled="true">
+          <stringProp name="dataSource">test</stringProp>
+          <stringProp name="query">select *
+from personalData;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">${X}</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">if( AssertionError == &quot;true&quot;){
+	FailureMessage = &quot; 0 &quot;;
+}
+else{
+	FailureMessage = &quot; 1 &quot;;
+}
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Alert" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>false</time>
+                <latency>false</latency>
+                <timestamp>false</timestamp>
+                <success>false</success>
+                <label>true</label>
+                <code>false</code>
+                <message>false</message>
+                <threadName>false</threadName>
+                <dataType>false</dataType>
+                <encoding>false</encoding>
+                <assertions>false</assertions>
+                <subresults>false</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
                 <responseHeaders>false</responseHeaders>
                 <requestHeaders>false</requestHeaders>
                 <responseDataOnError>false</responseDataOnError>

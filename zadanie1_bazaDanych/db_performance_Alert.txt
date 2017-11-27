@@ -1,5 +1,4 @@
-label,failureMessage
-JDBC Request Select,
-JDBC Request Insert ,
-JDBC Request Update ,
-JDBC Request Select All,
+JDBC Request - insert,"The operation lasted too long: It took 105 milliseconds, but should not have lasted longer than 30 milliseconds."
+JDBC Request - update, 1 
+JDBC Request -select, 1 
+JDBC Request - selectAll, 1 
