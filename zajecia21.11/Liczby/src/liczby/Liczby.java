@@ -2,37 +2,35 @@ package liczby;
 
 public class Liczby {
 
-    private int x;
-    private int y;
+    private Integer x;
+    private Integer y;
 
-    public Liczby(int x, int y) {
+    public Liczby(Integer x, Integer y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public Integer getX() {
         return x;
     }
 
-    public void setX(int x) {
+    public void setX(Integer x) {
         this.x = x;
     }
 
-    public int getY() {
+    public Integer getY() {
         return y;
     }
 
-    public void setY(int y) {
+    public void setY(Integer y) {
         this.y = y;
     }
 
-    public int ktoraWieksza() {
-        if (getX() == getY()) {
-            return getX();
-        } else if (getX() > getY()) {
-            return getX();
+    public boolean czyPierwszaWiekszaLubRowna() {
+        if (getX() >= getY()) {
+            return true;
         } else {
-            return getY();
+            return false;
         }
     }
 }
