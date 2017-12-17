@@ -20,7 +20,7 @@ public void clickOnCheckBox()
 	driver.findElement(checkBox1).click();
 }
 
-public void clickOnCheckButtion()
+public void clickOnCheckButton()
 {
 	driver.findElement(checkAll).click();
 	driver.findElement(unCheckAll).click();
