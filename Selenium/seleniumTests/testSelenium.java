@@ -7,16 +7,16 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-//import seleniumTests.o1;
-//import seleniumTests.o2;
-//import seleniumTests.o3;
-//import seleniumTests.o4;
-//import seleniumTests.o5;
-//import seleniumTests.o6;
-//import seleniumTests.o7;
-//import seleniumTests.o8;
+import seleniumTests.o1;
+import seleniumTests.o2;
+import seleniumTests.o3;
+import seleniumTests.o4;
+import seleniumTests.o5;
+import seleniumTests.o6;
+import seleniumTests.o7;
+import seleniumTests.o8;
 import seleniumTests.o9;
-//import seleniumTests.o10;
+import seleniumTests.o10;
 
 public class testSelenium {
 
@@ -26,8 +26,7 @@ public class testSelenium {
 		System.setProperty("webdriver.gecko.driver", "C:/Users/Anna/workspace/Selenium/seleniumjar/geckodriver.exe");
 	}
 	
-	
-	/* DOBRZE
+
 	@Test //1 checkBox
 	public void testo1() throws InterruptedException{
 		
@@ -42,8 +41,7 @@ public class testSelenium {
 
 		driver.quit();
 	}
-	*/
-	/*DOBRZE
+
 	@Test //2 DateTimePicker
 	public void testo2() throws InterruptedException{
 		
@@ -66,8 +64,7 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/* 3 DOBRZE
+
 	@Test //3 table(green, red)
 	public void testo3() throws InterruptedException{
 		
@@ -82,8 +79,7 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/* DOBRZE
+
 	@Test //4 pobieranie pliku
 	public void testo4() throws InterruptedException{
 		
@@ -99,9 +95,8 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/* DOBRZE
-	@Test //5
+
+	@Test //5 colorfull message
 	public void testo5() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
@@ -123,9 +118,8 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/* DOBRZE
-	@Test //6
+	
+	@Test //6 Data list with people
 	public void testo6() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
@@ -139,9 +133,8 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/* DOBRZE
-	@Test //7
+	
+	@Test //7 Get New User
 	public void testo7() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
@@ -155,9 +148,8 @@ public class testSelenium {
 		
 		driver.quit();
 	}
-	*/
-	/*Dobrze
-	@Test //8
+	
+	@Test //8 formularz
 	public void testo8() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
@@ -170,46 +162,44 @@ public class testSelenium {
 
 		driver.quit();
 	}
-	*/
 	
-	@Test //9
+	@Test //9 daty
 	public void testo9() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.seleniumeasy.com/test/jquery-dropdown-search-demo.html");
+		driver.get("http://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html");
 		
 		o9 object = new o9(driver);
-		object.clickOnCheckBox();
+		object.setDate1();
 		Thread.sleep(5000);
-		object.clickOnCheckButtion();
-		Thread.sleep(5000);
+		object.setDate2("21/12/2017");//, "01/06/2018");
 		
-		Assert.assertTrue(driver.getPageSource().contains("Success - Check box is checked"));
 		
 		driver.quit();
 	}
 	
-	/*
-	@Test //10
+	
+	@Test //10 filtrowanie(Ilosc stron, nazwa)
 	public void testo10() throws InterruptedException{
 		
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.seleniumeasy.com/test/basic-checkbox-demo.html");
+		driver.get("http://www.seleniumeasy.com/test/table-sort-search-demo.html");
 		
 		o10 object = new o10(driver);
-		object.clickOnCheckBox();
+		object.clickOnPages("2");
+		Thread.sleep(1000);
+		object.setSearch("Green");
 		Thread.sleep(5000);
-		object.clickOnCheckButtion();
-		Thread.sleep(5000);
-		
-		Assert.assertTrue(driver.getPageSource().contains("Success - Check box is checked"));
+	
+		Assert.assertTrue(driver.getPageSource().contains("COO"));
 		
 		driver.quit();
 	}
-	*/
+	
 	@After
 	public void setDown(){
-		//System.setProperty("webdriver.gecko.driver", "C:/Users/Anna/workspace/Selenium/seleniumjar/geckodriver.exe");
+		System.out.flush();
+        System.gc();
 	}
 }
 

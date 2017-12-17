@@ -25,7 +25,7 @@ public class o8 {
 		this.driver=driver;
 	}
 
-public void setData(String FName, String LName, String Email, String Phone, String Address, String City, String State, String Zip, String Web, String Comment) throws InterruptedException
+public void setData(String FName, String LName, String Email, String Phone, String Address, String City, String State, String Zip, String Web, String Comment)
 {
 	driver.findElement(firstName).sendKeys(FName);
 	driver.findElement(lastName).sendKeys(LName);

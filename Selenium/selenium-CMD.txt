@@ -1,0 +1,6 @@
+1) 
+cd C:\Users\Anna\workspace\Selenium\seleniumjar
+geckodriver.exe
+
+2)
+java -Dwebdriver.gecko.driver=C:\Users\Anna\workspace\Selenium\seleniumjar -jar C:\Users\Anna\workspace\Selenium\seleniumjar\selenium-server-standalone-3.8.1.jar -port 4440 
