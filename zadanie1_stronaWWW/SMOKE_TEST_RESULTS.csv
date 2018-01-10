@@ -3,56 +3,6 @@
 1 _NoAction, SMOKE_TEST_PASSED
 1 _NoAction, SMOKE_TEST_PASSED
 1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
-2_LogIn, SMOKE_TEST_PASSED
 2_LogIn, SMOKE_TEST_PASSED
 2_LogIn, SMOKE_TEST_PASSED
 2_LogIn, SMOKE_TEST_PASSED
@@ -63,78 +13,8 @@ _daneOsobowe(first page), SMOKE_TEST_PASSED
 _daneOsobowe(first page), SMOKE_TEST_PASSED
 _daneOsobowe(first page), SMOKE_TEST_PASSED
 _daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
-_daneOsobowe(first page), SMOKE_TEST_PASSED
 _nowosci(second page), SMOKE_TEST_PASSED
 _nowosci(second page), SMOKE_TEST_PASSED
 _nowosci(second page), SMOKE_TEST_PASSED
 _nowosci(second page), SMOKE_TEST_PASSED
 _nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-_nowosci(second page), SMOKE_TEST_PASSED
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 
-1 _NoAction, SMOKE_TEST_FAILED 

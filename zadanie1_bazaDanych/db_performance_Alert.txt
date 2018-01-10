@@ -1,4 +1,4 @@
-JDBC Request - insert,"The operation lasted too long: It took 105 milliseconds, but should not have lasted longer than 30 milliseconds."
+JDBC Request - insert,"The operation lasted too long: It took 92 milliseconds, but should not have lasted longer than 10 milliseconds."
 JDBC Request - update, 1 
 JDBC Request -select, 1 
-JDBC Request - selectAll, 1 
+JDBC Request - selectAll,"The operation lasted too long: It took 26 milliseconds, but should not have lasted longer than 10 milliseconds."

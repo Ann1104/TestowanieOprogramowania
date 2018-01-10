@@ -17,8 +17,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">6</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">3</stringProp>
         <longProp name="ThreadGroup.start_time">1508228676000</longProp>
         <longProp name="ThreadGroup.end_time">1508228676000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -145,7 +145,7 @@
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">v1</stringProp>
-              <stringProp name="RegexExtractor.regex">newsletter</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;meta name=&quot;google-site-verification&quot; content=&quot;2lISg7Q-ZPBm_vfnrnBBRlAtehDTuvITvctBkJcXK9s&quot; /&gt;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">ERROR</stringProp>
               <stringProp name="RegexExtractor.match_number">0</stringProp>
@@ -440,7 +440,7 @@ else{
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">v3</stringProp>
-                <stringProp name="RegexExtractor.regex">Gli</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;meta name=&quot;google-site-verification&quot; content=&quot;2lISg7Q-ZPBm_vfnrnBBRlAtehDTuvITvctBkJcXK9s&quot; /&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$3$</stringProp>
                 <stringProp name="RegexExtractor.default">ERROR</stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
