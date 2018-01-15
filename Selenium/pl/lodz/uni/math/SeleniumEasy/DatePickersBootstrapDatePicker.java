@@ -1,17 +1,19 @@
 package pl.lodz.uni.math.SeleniumEasy;
 
-import org.jbehave.core.annotations.Given;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class DatePickersBootstrapDatePicker {
 	WebDriver driver;
 	
-	By date1 = By.xpath("//i[@class='glyphicon glyphicon-th']");
-	By date2 = By.xpath("//th[@class='today']");
-	
-	By dateFrom = By.xpath("//input[@class='form-control'][@placeholder='Start date']");
-	By dateTo = By.xpath("//input[@class='form-control'][@placeholder='End date']");
+	By date = By.xpath("//i[@class='glyphicon glyphicon-th']");
+	By today = By.xpath("//th[@class='today']");
 	
 	
 	public DatePickersBootstrapDatePicker(WebDriver driver)
@@ -19,18 +21,15 @@ public class DatePickersBootstrapDatePicker {
 		this.driver=driver;
 	}
 	
-	public void setDate1()
+	public void clickOnDate()
 	{
-		driver.findElement(date1).click();
-		driver.findElement(date2).click();	
+		driver.findElement(date).click();
 	}
 	
-	
-	public void setDate2(String DateFrom)//, String DateTo)
+	public void clickOnToday()
 	{
-		driver.findElement(dateFrom).click();
-		driver.findElement(dateFrom).sendKeys(DateFrom);	
-		driver.findElement(dateTo).click();
-		//driver.findElement(dateTo).sendKeys(DateTo);
+		driver.findElement(today).click();	
 	}
+
+
 }

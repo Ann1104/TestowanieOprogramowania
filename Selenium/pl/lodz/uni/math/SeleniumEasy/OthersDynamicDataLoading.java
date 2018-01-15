@@ -19,4 +19,19 @@ public class OthersDynamicDataLoading {
 		driver.findElement(newUser).click();
 	
 	}
+	
+	public boolean waiting()
+	{
+		while (true)
+		{
+			if(driver.getPageSource().contains("First Name"))
+			{
+				return true;
+			}
+		}
+		
+		
+	}
+	
+	
 }

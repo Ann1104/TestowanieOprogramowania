@@ -17,15 +17,26 @@ public class TableTableSortANDSearch {
 		this.driver=driver;
 	}
 	
-	public void clickOnPages(String digit)
+	public void clickOnPages()
 	{
 		driver.findElement(pages).click();
+	}
+	
+	public void setIntoPages(String digit)
+	{
 		driver.findElement(pages).sendKeys(digit);
 	}
 	
-	public void setSearch(String word)
+	
+	public void clickOnSearch()
 	{
 		driver.findElement(search).click();
+	}
+	
+	
+	public void setIntoSearch(String word)
+	{
 		driver.findElement(search).sendKeys(word);
 	}
+	
 }

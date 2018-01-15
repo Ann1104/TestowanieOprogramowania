@@ -13,39 +13,106 @@ public class InputFormsInputFormSubmit {
 	By address = By.xpath("//input[@name='address']");
 	By city = By.xpath("//input[@name='city']");
 	By state = By.xpath("//select[@name='state']");
-	
+
 	By zipcode = By.xpath("//input[@name='zip']");
 	By website = By.xpath("//input[@name='website']");
 	By hosting = By.xpath("//input[@name='hosting'][@value='no'][@type='radio']");
 	By projectDescription = By.xpath("//textarea[@name='comment']");
 	By button = By.xpath("//button[@class='btn btn-default']");
-	
-	public InputFormsInputFormSubmit(WebDriver driver)
-	{
-		this.driver=driver;
+
+	public InputFormsInputFormSubmit(WebDriver driver) {
+		this.driver = driver;
 	}
 
-public void setData(String FName, String LName, String Email, String Phone, String Address, String City, String State, String Zip, String Web, String Comment)
-{
-	driver.findElement(firstName).sendKeys(FName);
-	driver.findElement(lastName).sendKeys(LName);
-	driver.findElement(eMail).sendKeys(Email);
-	driver.findElement(phone).sendKeys(Phone);
-	driver.findElement(address).sendKeys(Address);
-	driver.findElement(city).sendKeys(City);
-	driver.findElement(state).click();
-	driver.findElement(state).sendKeys(State);
-	driver.findElement(state).click();
-	driver.findElement(zipcode).sendKeys(Zip);
-	driver.findElement(website).sendKeys(Web);
-	driver.findElement(hosting).click();
-	driver.findElement(projectDescription).click();
-	driver.findElement(projectDescription).sendKeys(Comment);
-	
-}
+	public void clickFirstName() {
+		driver.findElement(firstName).click();
+	}
 
-public void submit()
-{
-	driver.findElement(button).click();
-}
+	public void setFirstName(String FName) {
+		driver.findElement(firstName).sendKeys(FName);
+	}
+
+	public void clickLName() {
+		driver.findElement(lastName).click();
+	}
+
+	public void setLName(String LName) {
+		driver.findElement(lastName).sendKeys(LName);
+	}
+
+	public void clickEmail() {
+		driver.findElement(eMail).click();
+	}
+
+	public void setEmail(String Email) {
+		driver.findElement(eMail).sendKeys(Email);
+	}
+
+	public void clickPhone() {
+		driver.findElement(phone).click();
+	}
+
+	public void setPhone(String Phone) {
+		driver.findElement(phone).sendKeys(Phone);
+	}
+
+	public void clickAddress() {
+		driver.findElement(address).click();
+	}
+
+	public void setAddress(String Address) {
+		driver.findElement(address).sendKeys(Address);
+	}
+
+	public void clickCity() {
+		driver.findElement(city).click();
+	}
+
+	public void setCity(String City) {
+		driver.findElement(city).sendKeys(City);
+	}
+
+	public void clickOnState() {
+		driver.findElement(state).click();
+	}
+
+	public void setState(String State) {
+		driver.findElement(state).sendKeys(State);
+	}
+
+	public void clickZip() {
+		driver.findElement(zipcode).click();
+	}
+
+	public void setZip(String Zip) {
+		driver.findElement(zipcode).sendKeys(Zip);
+	}
+
+	public void clickWeb() {
+		driver.findElement(website).click();
+	}
+
+	public void setWeb(String Web) {
+		driver.findElement(website).sendKeys(Web);
+	}
+
+	public void clickOnHosting() {
+		driver.findElement(hosting).click();
+	}
+
+	public void clickOnProjectDescription() {
+		driver.findElement(projectDescription).click();
+	}
+
+	public void clickProjectDescription() {
+		driver.findElement(projectDescription).click();
+	}
+
+	public void setProjectDescription(String Comment) {
+		driver.findElement(projectDescription).sendKeys(Comment);
+	}
+
+	public void submit() {
+		driver.findElement(button).click();
+	}
 }
